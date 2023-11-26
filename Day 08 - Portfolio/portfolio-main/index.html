@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="script.js"></script>
+<script>
+this.state.instance.container.fitToViewport(); 
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!--Nav Bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background:#000" id=navbar>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header col-md-offset-2">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+              </button>
+
+        <a class="navbar-brand" href="#" style="font-family: 'Futuristic Font', cursive; font-size: 20pt;">Eldos Zheksheev</a>
+      </div>
+      <div class="col-md-offset-7 collapse navbar-collapse" style="font-size:14pt;" id="mynavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#welcome-section">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">works</a></li>
+          <li><a href="#contact">contact me</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+<!--First Page-->
+<section class="hero" id="welcome-section">
+  <div class="intro">
+  </div>
+</section>
+<br>
+<div class="container-fluid" id="about">
+  <div class="row">
+    <div>
+      <center>
+        <img class="prf-img img-responsive img-circle" src="profile.jpg"></center>
+    </div>
+  </div>
+  <div class="row">
+    <center>
+      <h1 class="titre">about me</h1>
+    </center>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-xs-10 col-xs-offset-1">
+      <p class="def-txt">I was born on January 10, 2005.<br> </p>
+✔I graduated from the boarding school-lyceum named Toktogul Satylganov in the city of Karakol, Kyrgyzstan. <br> </p>
+✔At present time I study at Kyrgyz State Technical University.  <br> </p>
+✔I started to study the about design since I was 12 years old. In the current time know Adobe products and 3d platform Blender. But I am interested about the vfx designer or compositing. And i now begin to study the program Nuke from the company The Foundry.<br> </p>
+✔I will do the work qualitatively, on time and blah decent. <br> </p>
+
+    </div>
+  </div>
+</div>
+<center>
+      <h1 class="titre">What can I do?</h1>
+    </center>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-xs-10 col-xs-offset-1">
+      <p class="def-txt">I’m a 3d generalist and Motion Designer.<br> </p>
+      ➕I am a Photoshop and lightroom expert.<br> </p>
+I can: <br> </p>
+✔do any kind of retouching <br> </p>
+✔remove the background <br> </p>
+✔photo manipulation<br> </p>
+✔masking, clipping<br> </p>
+✔any type of photo editing tasks<br> </p>
+<br> </p>
+
+➕I am an expert in Premeir Pro and After Effects.<br> </p>
+I can:<br> </p>
+✔slide editing<br> </p>
+✔video correction of filters<br> </p>
+✔motion design<br> </p>
+✔logo animation<br> </p>
+✔Any kind of video editing tasks<br> </p>
+<br> </p>
+➕I am expert a Blender 3d<br> </p>
+I can:<br> </p>
+✔modeling<br> </p>
+✔sculpting<br> </p>
+✔animate<br> </p>
+✔3d motion design<br> </p>
+✔Realistic landscape or object<br> </p>
+✔Any type of 3D tasks.<br> </p>
+<br> </p>
+➕I take my project very seriously and do it 100%. The success of the work is also 100%.<br> </p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!--Progress-bar-->
+<div class="container-fluid">
+  <div class="row">
+    <center>
+      <h1 class="titre">skills</h1>
+    </center>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-lg-offset-3">
+      <h3>Photoshop</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:99%;">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <h3>Premiere Pro</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-lg-offset-3">
+      <h3>Blender</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <h3>After Effects</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<br>
+<br>
+<br>
+<br>
+<!--Works-->
+<div class="container-fluid works" id="projects">
+  <div>
+    <center>
+      <h1 class="titre">works</h1>
+    </center>
+  </div>
+  <br>
+  <p class="def-txt">Photoshop.<br> </p>
+  <div class="thumb-container project-tile">
+    <a href="works/poster.png" class="thumbnail-unit-7" target="_blank"></a>
+    <a href="works/obodo.png" class="thumbnail-unit-4" target="_blank"></a>
+    <a href="works/selva.png" class="thumbnail-unit-5" target="_blank"></a>
+  </div>
+</div>
+<div class="container-fluid works" id="projects">
+  <div>
+  <p class="def-txt">Video Editing.<br> </p>
+  <div class="thumb-container project-tile">
+    <a href="https://youtu.be/zcznLy5fbjU" class="thumbnail-unit-20" target="_blank"></a>
+    <a href="https://youtu.be/f5snGxEFfY0?si=XsXkZ0_oyWOfs6U0" class="thumbnail-unit-21" target="_blank"></a>
+  </div>
+</div>
+</div>
+<div class="container-fluid works" id="projects">
+  <div>
+  <p class="def-txt">Blender.<br> </p>
+  <div class="thumb-container project-tile">
+    <a href="works/big moon.jpg" class="thumbnail-unit-1" target="_blank"></a>
+    <a href="works/grass.jpg" class="thumbnail-unit-2" target="_blank"></a>
+    <a href="works/kyrgyz flag.png" class="thumbnail-unit-3" target="_blank"></a>
+    <a href="works/11.png" class="thumbnail-unit-12" target="_blank"></a>
+    <a href="https://youtu.be/V4Wbh7dhhTg" class="thumbnail-unit-16" target="_blank"></a>
+    <a href="https://youtu.be/akfKN18X6M4" class="thumbnail-unit-19" target="_blank"></a>
+  </div>
+</div>
+</div>
+<div class="container-fluid works" id="projec</div>ts">
+  <div>
+  <p class="def-txt">Motion Design.<br> </p>
+  <div class="thumb-container project-tile">
+    <a href="https://www.youtube.com/watch?v=tc3TnNoqRFY" class="thumbnail-unit-22" target="_blank"></a>
+    <a href="https://www.youtube.com/watch?v=2bbY2aJIsFg" class="thumbnail-unit-6" target="_blank"></a>
+    <a href="https://www.youtube.com/watch?v=2bbY2aJIsFg" class="thumbnail-unit-8" target="_blank"></a>
+    <a href="https://www.youtube.com/watch?v=jLTO06drui4" class="thumbnail-unit-9" target="_blank"></a>
+    <a href="https://www.youtube.com/watch?v=bQ_yZ7F2QO8" class="thumbnail-unit-10" target="_blank"></a>
+  </div>
+</div>
+</div>
+<div class="container-fluid works" id="projects">
+  <div>
+  <p class="def-txt">Compositing.<br> </p>
+  <div class="thumb-container project-tile">
+    <a href="https://youtu.be/ZQG-v6YB6yQ?si=Gd6Dowuah6f3Fmor" class="thumbnail-unit-24" target="_blank"></a>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!--contact-->
+<div class="container-fluid" id="contact">
+  <div>
+    <center>
+      <h1 class="titre">contact</h1>
+    </center>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-xs-4">
+      <div class="icon-container">
+        <a href="https://www.instagram.com/eldos_programs/" target="_blank">
+          <center>
+            <img src="instagram.png">
+          </center>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xs-4">
+          <div class="icon-container ">
+            <a href="https://www.upwork.com/freelancers/~019638d52f77be2a24" target="_blank ">
+            <center>
+              <img src="upwork.png ">
+                </center>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-4">
+      <div class="icon-container">
+        <a href="https://www.youtube.com/channel/UCigPC-Sxf3KtkH89860Mtkw" target="_blank">
+          <center>
+            <img src="youtube.png">
+          </center>
+        </a>
+      </div>
+    </div>
+</div>
+
+
+<!--Forum-->
+<div class="works ">
+  <div class="container ">
+      <center>
+      <h1 class="titre ">let's work together</h1>
+        </center>
+    <br>
+      <form>
+        <div class="col-lg-4 col-xs-12 " style="float:left; ">
+          <div class="form-group ">
+
+                  <label>First Name:</label>
+                    <input type="text " class="form-control ">
+
+            </div>
+            <div class="form-group ">
+
+                  <label>Last Name:</label>
+                    <input type="text " class="form-control ">
+
+            </div>
+            <div class="form-group ">
+
+                  <label>E-mail:</label>
+                    <input type="email " class="form-control ">
+
+            </div>
+            <div class="form-group ">
+
+                  <label>Phone Number:</label>
+                    <input type="number " class="form-control ">
+
+            </div>
+            </div>
+            <div class="col-lg-8 col-xs-12 " style="float:left; "> 
+            <div class="form-group ">
+
+                  <label>Message:</label>
+          <textarea class="form-control " rows="12 "></textarea>
+
+            </div>
+            </div>
+      <div class="col-lg-12 col-xs-12 ">
+            <center>
+            <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#popUpWindow " style="width:35%; ">Send</button>
+            </center>
+            </div>            
+    </form>
+  </div>
+    <br>
+</div>
+<!--PopUpWindow-->
+<div class="modal fade " id="popUpWindow ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+
+                <!-- header -->
+                <div class="modal-header " style="border-bottom:0; ">
+             <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                </div>
+
+                <!-- body (form) -->
+                <div class="modal-body ">
+
+                    <img class="img-responsive " src="http://www.adweek.com/socialtimes/wp-content/uploads/sites/2/2013/12/3_sparkle_600.png ">
+                </div>
+
+                <!-- button -->
+                <div class="modal-footer " style="border-top:0px; ">
+                    <button class="btn btn-primary btn-block " data-dismiss="modal ">Thank You</button>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+
+<a href="#welcome-section " class="back-to-top "></a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
